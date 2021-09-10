@@ -1,9 +1,18 @@
-class UserNotFoundException(Exception):
+class UserException(Exception):
     pass
 
 
-class UserAlreadyExistsException(Exception):
+class UserNotFoundException(UserException):
     pass
 
-class CreateUserException(Exception):
+
+class UserAlreadyExistsException(UserException):
+    pass
+
+
+class CreateUserException(UserException):
+    pass
+
+
+class UpdateUserException(UserException):
     pass
