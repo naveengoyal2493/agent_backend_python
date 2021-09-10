@@ -6,3 +6,8 @@ class SQLConstants:
     USER_DOB = "dob"
     USER_GENDER = "gender"
     USER_EMAIL = "email"
+
+    NAME_LENGTH = 50
+    EMAIL_LENGTH = 50
+    GENDER_NOTATIONS = ["M", "F", "O"]
+    DATE_FORMAT = "%d-%m-%Y"
