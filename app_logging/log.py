@@ -1,5 +1,4 @@
 import time
-import sys
 
 class Log:
 
@@ -20,8 +19,7 @@ class Log:
 
     @staticmethod
     def log(log_type, message):
-        if log_type == Log.TIME:
-            print(Log.__format_message(Log.TIME, message))
+        print(Log.__format_message(log_type, message))
 
 
     @staticmethod
