@@ -19,12 +19,12 @@ def is_valid_email(email):
     return bool(re.match(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b', email))
 
 
-def is_string_size_less_then_length(string, value):
+def is_string_size_less_then_length(string, length):
     if not type(string) == str:
         raise TypeError(f"Expected a string type value not {string}")
-    if not type(value) == int:
-        raise TypeError(f"Expected an integer type value not {value}")
-    return True if len(string) < value else False
+    if not type(length) == int:
+        raise TypeError(f"Expected an integer type value not {length}")
+    return True if len(string) < length else False
         
 
 def does_string_exist_in_list(string, values):
